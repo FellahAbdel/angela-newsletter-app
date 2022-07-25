@@ -12,59 +12,21 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <style type="text/css">
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #3b3b98;
-        font-family: "Cardo", serif;
-      }
-
-      .row {
-        margin: 0;
-      }
-
-      a {
-        background-color: #182c61;
-        border: 0px;
-        text-decoration: none;
-        padding: 10px;
-        color: #fff;
-        font-family: "Lemonada", cursive;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: #fff;
-        background-color: #0c2461;
-      }
-
-      h1 {
-        font-size: 11.2rem;
-      }
-
-      h4 {
-        padding-bottom: 20px;
-        font-family: "Lemonada", cursive;
-      }
-
-      p {
-        font-family: "Lemonada", cursive;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/sharedStyles.css" />
   </head>
   <body>
     <div class="row">
       <div
         class="col-md-12 d-flex flex-column justify-content-center align-items-center text-white vh-100"
       >
-        <h1>Uh oh!</h1>
+        <h1 class="">Uh oh !</h1>
         <p>
-          There was a problem signing you up. Please try again or contact the
-          developer
+          There was a problem signing you up 😞️. Please try again or contact
+          the developer
         </p>
-        <a href="/">Back To Home</a>
+        <form action="/failure" method="post">
+          <button type="submit" class="btn">Back To Home</button>
+        </form>
       </div>
     </div>
   </body>
